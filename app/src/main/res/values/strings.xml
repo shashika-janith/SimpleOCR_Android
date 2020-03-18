@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleOCR</string>
+    <string name="scan">Scan</string>
+    <string name="choose_an_imae_to_scan">Choose an image to scan</string>
+</resources>

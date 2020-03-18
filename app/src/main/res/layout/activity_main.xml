@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layoutParent"
+    android:background="@drawable/bg_main">
+
+    <ImageView
+        android:id="@+id/imgViewPhotoToBeScanned"
+        app:layout_constraintTop_toTopOf="@id/layoutParent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_text_view"/>
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="@id/layoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:textColor="@color/colorLightGray"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:textSize="60sp"
+            android:textColor="@color/colorLightGray"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnScan"
+            android:layout_marginEnd="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to"
+            android:textSize="30sp"
+            android:textColor="@color/colorTiara"
+            android:layout_alignEnd="@id/txtScan"
+            android:layout_marginTop="35dp"/>
+
+    </RelativeLayout>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtViewCapturedTxt"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btnScan"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/layoutParent"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="@drawable/bg_text_view"-->
+<!--        android:scrollIndicators="right"-->
+<!--        android:text="@string/app_name"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/darkGray"-->
+<!--        android:padding="12dp" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/imgViewPhotoToBeScanned"
+        app:layout_constraintBottom_toBottomOf="@id/layoutParent"        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/txtViewCapturedTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/colorLightGray"
+            android:padding="12dp"
+            android:background="@drawable/bg_text_view" />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

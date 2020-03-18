@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorDarkPurple">#3c1361</color>
+    <color name="colorJava">#12b2d2</color>
+    <color name="colorLightGray">#FAFAFA</color>
+    <color name="colorLightGrayTransparent">#77FAFAFA</color>
+    <color name="darkGray">#222222</color>
+
+    <color name="colorJuniper">#776c8a95</color>
+
+    <color name="colorGumbo">#829aa4</color>
+    <color name="colorTiara">#c1d1d0</color>
+    <color name="colorShuttleGray">#5a6372</color>
+
+</resources>
